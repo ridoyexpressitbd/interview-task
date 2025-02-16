@@ -1,11 +1,16 @@
 import express from 'express'
 import { StoreRoutes } from '../modules/store/store.route'
+import { DomainRoutes } from '../modules/domain/domain_route'
 const routers = express.Router()
 
 const moduleRoutes = [
   {
     path: '/stores',
     route: StoreRoutes
+  },
+  {
+    path: '/domains',
+    route: DomainRoutes
   }
 ]
 
